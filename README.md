@@ -16,7 +16,7 @@ This project aims to develop an RSS aggregator using Go programming language alo
 
 2. **Generate SQLC Queries**: Generate SQLC queries to interact with the database. Run the following command in the root directory:
     ```bash
-    docker run --rm -v "$(pwd):/src" -w /src sqlc/sqlc generate
+    docker run --rm -v "%cd%:/src" -w /src sqlc/sqlc generate
     ```
     This will generate Go code for type-safe SQL queries based on the SQL files located in the `sql/queries` directory.
 
